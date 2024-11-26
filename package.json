@@ -1,0 +1,19 @@
+{
+  "name": "abexita-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,  
+  "workspaces": [
+    "projects/*"   
+  ],
+  "scripts": {
+    "dev:project-1": "npm --workspace=projects/project-1 run dev",
+    "dev:project-2": "npm --workspace=projects/project-2 run dev",
+    "build": "npm --workspaces run build",
+    "start": "npm --workspaces run start"  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
