@@ -70,27 +70,30 @@ const Features = () => {
 		},
 	];
 	return (
-		<div className="my-16 bg-[#19525A] p-20">
-			<div className="w-[1296px] mx-auto">
+		<div className="lg:my-16 my-10 bg-[#19525A] lg:p-20 p-14">
+			<div className="lg:w-[1296px] w-full mx-auto">
 				<SectionTitle
 					subHeading={"Features"}
 					heading={
-						<span className="text-white">
+						<span className="text-white lg:text-[36px] text-lg">
 							Solve all your needs with a single software solution
 						</span>
 					}
 				/>
-				<p className="text-[20px] font-normal text-white w-2/3 text-justify mx-auto px-5 mt-5">
+				<p className="lg:text-[20px] text-base font-normal text-white lg:w-2/3 w-full lg:text-justify mx-auto lg:px-5 mt-5 px-3">
 					This platform streamlines the entire customer management process,
 					saving businesses time and increasing efficiency. Trusted by over 60+
 					businesses.
 				</p>
 
-				<div className="grid grid-cols-4 gap-5 mt-10">
+				<div className="grid lg:grid-cols-4 grid-cols-1 gap-5 mt-10">
 					{data?.map((item, index) => {
-                        // console.log("data",item);
+						// console.log("data",item);
 						return (
-							<div className="w-[300px] h-[220px] bg-[#25646C] p-7 rounded-xl hover:border-2 hover:shadow-lg hover:shadow-slate-50" key={index}>
+							<div
+								className="w-[300px] h-[220px] bg-[#25646C] p-7 rounded-xl hover:border-2 hover:shadow-lg hover:shadow-slate-50"
+								key={index}
+							>
 								<div className="flex justify-between mb-3">
 									<Image height={20} width={20} src={item?.image1} alt="" />
 									<Image height={20} width={20} src={item?.image2} alt="" />

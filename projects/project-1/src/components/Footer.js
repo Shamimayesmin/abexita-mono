@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<div className="bg-[#19525A] text-white px-36">
+		<div className="bg-[#19525A] text-white lg:px-36 px-10">
 			<footer className=" p-6 lg:p-10">
-				<div className="flex flex-col lg:flex-row lg:justify-between">
+				<div className="flex flex-col lg:flex-row lg:justify-between w-full">
 					{/* <!-- Services Section --> */}
 					<nav className="mb-6 lg:mb-0">
 						<h6 className="font-semibold text-base mb-3">For Customers</h6>
@@ -83,7 +83,7 @@ const Footer = () => {
 							</li>
 							<li>
 								<a href="#" className="block hover:underline">
-								Business tools
+									Business tools
 								</a>
 							</li>
 						</ul>
@@ -167,7 +167,7 @@ const Footer = () => {
 						</ul>
 					</nav>
 				</div>
-                {/* social icons */}
+				{/* social icons */}
 				<div className="flex items-center mb-4 lg:mb-0 gap-8">
 					<p>Follow us</p>
 					<nav>

@@ -5,6 +5,7 @@ import icon1 from "../../public/assets/symbol/Featured icon.png";
 import icon2 from "../../public/assets/symbol/Featured icon (1).png";
 import checkIcon from "../../public/assets/symbol/Check icon.png";
 
+
 const Banner = () => {
 	const data = [
 		{

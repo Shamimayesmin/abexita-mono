@@ -59,7 +59,7 @@ const Navbar = ({ menuItems, authLinks }) => {
 
         {/* Navbar Center for Larger Screens */}
         <div className="hidden lg:flex">
-          <ul className="menu flex px-1 space-x-4">
+          <ul className="menu flex px-1 space-x-4 lg:max-w-min w-full">
             {menuItems?.map((item, index) => (
               <li key={index} className="relative group">
                 <Link href={item.href} className="group-hover:bg-base-200">

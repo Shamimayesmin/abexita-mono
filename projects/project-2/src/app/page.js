@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const Features = React.lazy(() =>
 	import("../../../project-1/src/components/Reuseable/Features")
-); 
+);
 
 export default function Home() {
 	return (

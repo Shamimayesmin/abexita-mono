@@ -1,68 +1,58 @@
 "use client";
+
 import SectionTitle from "../../../../projects/shared/components/Reuseable/SectionTitle";
 import Image from "next/image";
 import banImage from "../../../../projects/project-1/public/assets/Frame 1000002406.png";
 import icon from "../../../../projects/project-1/public/assets/Sucess.png";
 import mainImage from "../../../../projects/project-1/public/assets/Main image.png";
+
 const Banner = () => {
 	return (
-		<div
-			className="mt-28 bg-cover bg-center"
-			// style={{
-			// 	backgroundImage: "url('/assets/Background line.svg')",
-			// 	backgroundSize: "cover",
-			// 	backgroundPosition: "center",
-			// 	height: "400px",
-			// 	width: "100%",
-			// }}
-		>
-			{/* <SectionTitle
-				heading={
-					<>
-						Looking for a{" "}
-						<span className="text-red-500">business solution for</span>{" "}
-						appointments?
-					</>
-				}
-			/> */}
-
-			{/* <div>
-				<h2 className="text-base text-[#667085] mt-5">
-					Ambel simplifies management by providing tools for scheduling{" "}
-					appointments, managing bookkeeping, accepting payments, sharing
-					resources with customers, sending reminders, and running email
-					marketing campaigns.
-				</h2>
-				<div className="flex justify-center items-center">
-					<button className="mr-4 bg-[#19525A]">Start A Free Trial</button>
-					<button>button2</button>
-				</div>
-			</div> */}
+		<div className="lg:mt-28 mt-20">
+			{/* Banner Section */}
 			<div
-				className="bg-cover bg-center"
+				className="bg-cover bg-center lg:mt-8 mt-7"
 				style={{
 					backgroundImage: "url('/assets/Background line.svg')",
 					backgroundSize: "cover",
 					backgroundPosition: "center",
-					height: "400px",
-					width: "100%",
 				}}
 			>
-				<Image src={banImage} alt="" />
+				<div className="mx-auto px-4 flex flex-col items-center gap-10 lg:mt-0 mt-0">
+					{/* Left Image */}
+					<div className="w-full">
+						<Image
+							className="w-full h-auto object-contain"
+							src={banImage}
+							alt="Banner Image"
+							priority
+						/>
+					</div>
 
-				<div className="flex justify-center items-center mt-10 gap-8">
-					<button className="bg-[#ECFDF3] text-[#027A48] text-[12px] font-medium px-2 py-1 rounded-lg inline-flex items-center gap-2">
-						<Image src={icon} alt="" />
-						No credit card required
-					</button>
-					<button className="bg-[#ECFDF3] text-[#027A48] text-[12px] font-medium px-2 py-1 rounded-lg inline-flex items-center gap-2">
-						<Image src={icon} alt="" />
-						Try one month for free
-					</button>
+					{/* Call-to-Action Buttons */}
+					<div className="w-full flex lg:flex-row flex-col items-center  gap-4 justify-center">
+						<button className="bg-[#ECFDF3] text-[#027A48] text-xs md:text-sm font-medium px-4 py-2 rounded-lg inline-flex items-center gap-2 shadow-md">
+							<Image src={icon} alt="Success Icon" width={16} height={16} />
+							No credit card required
+						</button>
+						<button className="bg-[#ECFDF3] text-[#027A48] text-xs md:text-sm font-medium px-4 py-2 rounded-lg inline-flex items-center gap-2 shadow-md">
+							<Image src={icon} alt="Success Icon" width={16} height={16} />
+							Try one month for free
+						</button>
+					</div>
 				</div>
 			</div>
-			<div className="my-10">
-				<Image src={mainImage} alt="" />
+
+			{/* Main Image Section */}
+			<div className="mt-10">
+				<div className="container mx-auto px-4">
+					<Image
+						className="w-full h-auto object-contain"
+						src={mainImage}
+						alt="Main Image"
+						priority
+					/>
+				</div>
 			</div>
 		</div>
 	);

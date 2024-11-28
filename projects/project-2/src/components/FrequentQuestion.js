@@ -1,7 +1,7 @@
 import React from "react";
-import SectionTitle from "./Reuseable/SectionTitle";
+
 import Image from "next/image";
-// import SectionTitle from '../../../shared/components/Reuseable/SectionTitle';
+import SectionTitle from '../../../shared/components/Reuseable/SectionTitle';
 import img from "../../public/assets/Image.png";
 import icon1 from "../../public/assets/featureIcon/Featured icon (2).png";
 import icon2 from "../../public/assets/featureIcon/Featured icon (3).png";
