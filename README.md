@@ -43,7 +43,7 @@ Prerequisite: (should be follow):
 # Project 2 Example Image
 
 ### Phone View:
-<img src="./projects/shared/assets/example/phoneView-2.png" alt="Phone View" width="900" height="1300">
+<img src="./projects/shared/assets/example/phoneView-2.png" alt="Phone View" width="800" height="full">
 
 
 
