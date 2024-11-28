@@ -49,22 +49,22 @@ const Banner = () => {
 		},
 	];
 	return (
-		<div className=" mb-10 relative">
-			<div className="bg-[#F5FFFA] mt-16 p-20 pb-52">
+		<div className="lg:mb-10 mb-20 relative">
+			<div className="bg-[#F5FFFA] lg:mt-16 mt-10 lg:p-20 p-14 lg:pb-52 pb-24">
 				<SectionTitle
 					subHeading={<span className="text-[#19525A]">Pricing plans</span>}
 					heading={
-						<span className="text-[#307D33]">
+						<span className="text-[#307D33] lg:text-[36px] text-lg">
 							Let’s Get Started. <br /> We’ve got a Plan that’s perfect for you.{" "}
 						</span>
 					}
 				/>
-				<p className="text-[#0089C9] text-lg text-center mt-6">
+				<p className="text-[#0089C9] lg:text-lg text-sm text-center mt-6">
 					Simple, transparent pricing that grows with you. Try any plan free for
 					30 days.
 				</p>
 
-				<div className="items-center w-[300px] p-1 bg-[#ECECEC] mx-auto flex rounded-xl mt-7">
+				<div className="items-center lg:w-[300px] w-full p-1 bg-[#ECECEC] mx-auto flex rounded-xl mt-7">
 					<button className="bg-[#ECECEC] w-[150px] px-5 py-1 rounded-lg">
 						Monthly
 					</button>
@@ -73,12 +73,12 @@ const Banner = () => {
 					</button>
 				</div>
 			</div>
-			<div className="w-[1280px] bg-[] mx-auto grid lg:grid-cols-3 grid-cols-1 absolute top-96 inset-x-0">
+			<div className="lg:w-[1280px] w-full mx-auto grid lg:grid-cols-3 grid-cols-1 absolute top-96 lg:mt-0 mt-5 inset-x-0 lg:px-0 px-2 gap-3">
 				{data?.map((item, index) => {
 					return (
 						<div
 							key={index}
-							className="w-[384px] h-[500px] bg-[#FFFFFF] border-2 p-4 "
+							className="lg:w-[384px] w-full lg:h-[500px] h-full bg-[#FFFFFF] border-2 lg:p-4 rounded-lg p-2"
 						>
 							<Image
 								className="mx-auto"
@@ -90,7 +90,7 @@ const Banner = () => {
 							<p className="text-[#19525A] text-[20px] font-semibold text-center">
 								{item?.title}
 							</p>
-							<p className="text-center text-[48px] text-[#101828] font-semibold">
+							<p className="text-center lg:text-[48px] text-3xl text-[#101828] font-semibold">
 								{item?.price}
 							</p>
 							<p className="text-[#475467] text-center">{item?.description}</p>

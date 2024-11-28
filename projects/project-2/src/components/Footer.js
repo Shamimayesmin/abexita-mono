@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<div className="bg-[#19525A] text-white px-36">
-			<footer class=" p-6 lg:p-10">
+		<div className="bg-[#19525A] text-white lg:px-36 px-16">
+			<footer class="p-6 lg:p-10">
 				<div class="flex flex-col lg:flex-row lg:justify-between">
 					{/* <!-- Services Section --> */}
 					<nav class="mb-6 lg:mb-0">

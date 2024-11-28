@@ -91,7 +91,7 @@ const Features = () => {
 						// console.log("data",item);
 						return (
 							<div
-								className="w-[300px] h-[220px] bg-[#25646C] p-7 rounded-xl hover:border-2 hover:shadow-lg hover:shadow-slate-50"
+								className="lg:w-[300px] w-full h-[220px] bg-[#25646C] p-7 rounded-xl hover:border-2 hover:shadow-lg hover:shadow-slate-50"
 								key={index}
 							>
 								<div className="flex justify-between mb-3">

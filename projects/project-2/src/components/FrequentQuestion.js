@@ -62,10 +62,10 @@ const FrequentQuestion = () => {
 		},
 	];
 	return (
-		<div className="w-[1280px] mx-auto mb-10">
-			<div className="w-1/2 p-8">
+		<div className="lg:w-[1280px] w-full mx-auto mb-10">
+			<div className="lg:w-1/2 w-full p-8">
 				<h5 className="text-[#19525A] text-start text-sm font-bold">Support</h5>
-				<h2 className="text-[#101828] text-[36px] font-bold">
+				<h2 className="text-[#101828] lg:text-[36px] text-3xl font-bold">
 					Frequently asked questions
 				</h2>
 				<p className="text-[#475467]">
@@ -73,8 +73,8 @@ const FrequentQuestion = () => {
 					the answer you’re looking for? Please chat to our friendly team.
 				</p>
 			</div>
-			<div className="flex gap-10">
-				<div className="w-1/2 grid grid-cols-1 gap-2">
+			<div className="flex lg:flex-row flex-col lg:gap-10 gap-5">
+				<div className="lg:w-1/2 w-full grid grid-cols-1 gap-2">
 					{data?.map((item, index) => {
 						return (
 							<div key={index} className="flex gap-2 px-8">
@@ -88,7 +88,7 @@ const FrequentQuestion = () => {
 									/>
 								</div>
 								<div>
-									<h5 className="text-[#101828] text-[18px] font-semibold">
+									<h5 className="text-[#101828] lg:text-[18px] text-base font-semibold">
 										{item?.title}
 									</h5>
 									<p className="text-sm text-[#475467] font-normal">
@@ -100,7 +100,7 @@ const FrequentQuestion = () => {
 					})}
 				</div>
 
-				<div className="w-1/2 py-28">
+				<div className="lg:w-1/2 w-full lg:py-28 py-16 lg:px-0 px-3">
 					<Image className="" height={460} width={560} src={img} alt="" />
 				</div>
 			</div>

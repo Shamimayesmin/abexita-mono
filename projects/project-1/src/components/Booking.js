@@ -2,9 +2,9 @@ import React from "react";
 
 const Booking = () => {
 	return (
-		<div className="lg:w-[1260px] w-full mx-auto items-center shadow-lg rounded-2xl drop-shadow-lg mb-10">
+		<div className="lg:w-[1260px] w-full mx-auto items-center shadow-lg rounded-2xl drop-shadow-lg mb-14">
 			<div className="lg:px-20 px-8 lg:py-8 py-6">
-				<h3 className="text-[#344054] lg:text-[36px] text-lg font-semibold lg:px-20 px-10 text-center">
+				<h3 className="text-[#344054] lg:text-[36px] text-lg font-semibold lg:px-20 px-10 text-center leading-9">
 					Find and Book Appointments with Local <br /> and International
 					Professionals
 				</h3>
