@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logos from "../../../../projects/project-1/public/assets/Logos.png";
-
+// import img from "../../../../projects/shared/"
 const Brand = () => {
 	return (
 		<div className="bg-[#FAFAFA] lg:py-20 py-10 lg:mb-20 mb-10">
