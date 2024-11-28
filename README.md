@@ -13,7 +13,13 @@ cd <repository-folder>
 ## Start pruject-2
 - **`npm run dev:project-2`**
 
-![Example Image](./projects/shared/assets/example/laptopView.png)
+![Example Image: project-1](./projects/shared/assets/example/laptopView.png)
+
+![Example Image: project-1](./projects/shared/assets/example/phoneView-1.png)
+
+![Example Image: project-1](./projects/shared/assets/example/phoneView-2.png)
+
+
 
 
 
