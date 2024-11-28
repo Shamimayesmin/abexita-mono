@@ -13,6 +13,9 @@ cd <repository-folder>
 ## Start pruject-2
 - **`npm run dev:project-2`**
 
+-![Example Image](./shared/assets/example/laptopView.png)
+
+
 
 
 
