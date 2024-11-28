@@ -37,13 +37,13 @@ Prerequisite: (should be follow):
 <img src="./projects/shared/assets/example/laptopView.png" alt="Laptop View" width="800" height="full">
 
 ### Phone View:
-<img src="./projects/shared/assets/example/phoneView-1.png" alt="Phone View" width="900" height="full">
+<img src="./projects/shared/assets/example/phoneView-1.png" alt="Phone View" width="600" height="full">
 
 
 # Project 2 Example Image
 
 ### Phone View:
-<img src="./projects/shared/assets/example/phoneView-2.png" alt="Phone View" width="full" height="full">
+<img src="./projects/shared/assets/example/phoneView-2.png" alt="Phone View" width="600" height="full">
 
 
 
