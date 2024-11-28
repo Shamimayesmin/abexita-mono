@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionTitle from "./SectionTitle";
 
 const Features = () => {
 	const data = [
@@ -87,9 +88,9 @@ const Features = () => {
 
 				<div className="grid grid-cols-4 gap-5 mt-10">
 					{data?.map((item, index) => {
-                        console.log("data",item);
+                        // console.log("data",item);
 						return (
-							<div className="w-[300px] h-[220px] bg-[#25646C] p-7 rounded-xl hover:border-2 hover:shadow-lg hover:shadow-slate-50" key={item?.id}>
+							<div className="w-[300px] h-[220px] bg-[#25646C] p-7 rounded-xl hover:border-2 hover:shadow-lg hover:shadow-slate-50" key={index}>
 								<div className="flex justify-between mb-3">
 									<Image height={20} width={20} src={item?.image1} alt="" />
 									<Image height={20} width={20} src={item?.image2} alt="" />

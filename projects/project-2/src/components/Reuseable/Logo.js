@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../../projects/shared/assets/ambel copy 2 no pedding 1.png"
+
+
+import logo from "../../../public/assets/ambel copy 2 no pedding 1.png"
 
 const Logo = () => {
 	return (

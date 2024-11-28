@@ -3,3 +3,28 @@
 @tailwind utilities;
 
 
+  
+ /* global.css */
+
+/* Ensure that the navbar always has a solid background */
+nav {
+    background-color: #ffffff !important;  /* Set solid white background */
+    opacity: 1 !important; /* Remove any transparency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    z-index: 50 !important; /* Ensure the navbar is always on top */
+  }
+
+  footer nav {
+    background-color: transparent !important; /* Footer nav background should remain transparent */
+    box-shadow: none !important; /* Remove any box shadow from footer nav */
+  }
+  
+  /* Optional: Make sure the container takes up full width */
+  .container {
+    width: 100%;
+  }
+  
+  
+  
+  
+  

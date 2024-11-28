@@ -1,21 +1,27 @@
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import FreeTrial from "@/components/FreeTrial";
-import FrequentQuestion from "@/components/FrequentQuestion";
-import Features from "@/components/Reuseable/Features";
-import Image from "next/image";
+"use client";
+
+import React, { Suspense } from "react";
+
+import FreeTrial from "../components/FreeTrial";
+import FrequentQuestion from "../components/FrequentQuestion";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
+
+const Features = React.lazy(() =>
+	import("../../../project-1/src/components/Reuseable/Features")
+); 
 
 export default function Home() {
-  return (
-  <div>
-    <Banner/>
-    <FreeTrial/>
-    <Features/>
-    <FrequentQuestion/>
-    <Footer/>
-   {/* <div className="w-[1078px] mx-auto">
-    
-    </div> */}
-  </div>
-  );
+	return (
+		<div>
+			<Banner />
+			<FreeTrial />
+
+			<Suspense fallback={<div>Loading Features...</div>}>
+				<Features />
+			</Suspense>
+			<FrequentQuestion />
+			<Footer />
+		</div>
+	);
 }

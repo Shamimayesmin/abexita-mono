@@ -154,7 +154,6 @@ const Banner = () => {
 										{item?.text5}
 									</p>
 								</div>
-							
 							</div>
 
 							<div>

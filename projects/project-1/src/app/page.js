@@ -4,8 +4,11 @@ import Brand from "@/components/Brand";
 import Card from "@/components/Card";
 import Industry from "@/components/Industry";
 
-import Features from "../../../../projects/shared/components/Reuseable/Features";
+// import Features from "../../../../projects/shared/components/Reuseable/Features";
 import Footer from "@/components/Footer";
+import Slider from "@/components/Slider";
+import CardScrollEffect from "@/components/Card";
+import Features from "@/components/Reuseable/Features";
 
 
 export default function Home() {
@@ -19,7 +22,8 @@ export default function Home() {
     <Industry/>
     <Features/>
     <Booking/>
-    <Card/>
+    {/* <CardScrollEffect/> */}
+    <Slider/>
     <Footer/>
     
    </div>

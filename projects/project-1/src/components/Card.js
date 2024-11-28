@@ -1,7 +1,8 @@
-import React from 'react';
+"use client";
+import { useState, useRef } from "react";
 
 const Card = () => {
-    const data = [
+	const data = [
 		{
 			id: 1,
 			name: "Schedule & Booking",
@@ -68,11 +69,67 @@ const Card = () => {
 				"Create and share resources like Prescriptions, Documentations, Medical Charts and Videos.",
 		},
 	];
-    return (
-        <div>
-            cards
+
+	const [hovered, setHovered] = useState(false);
+
+	const handleHover = () => setHovered(true);
+	const handleLeave = () => setHovered(false);
+
+	// const handleHover = () => {
+	// 	setHovered(true);
+	// 	document.body.style.overflow = "hidden";  // Disable scrolling
+	//   };
+	  
+	//   const handleLeave = () => {
+	// 	setHovered(false);
+	// 	document.body.style.overflow = "";  // Re-enable scrolling
+	//   };
+	  
+	return (
+		<div className="relative w-full h-screen flex justify-center items-center bg-gray-100">
+      <div
+        className="relative w-80 h-60 group"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleLeave}
+      >
+        {/* Card 1 */}
+        <div
+          className={`absolute w-full h-full bg-blue-100 transition-transform duration-1000 ${
+            hovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+          }`}
+        >
+          <p className="p-4 text-lg font-semibold">Card 1</p>
         </div>
-    );
+
+        {/* Card 2 */}
+        <div
+          className={`absolute w-full h-full bg-yellow-100 transition-transform duration-1000 delay-300 ${
+            hovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+          }`}
+        >
+          <p className="p-4 text-lg font-semibold">Card 2</p>
+        </div>
+
+        {/* Card 3 */}
+        <div
+          className={`absolute w-full h-full bg-pink-100 transition-transform duration-1000 delay-600 ${
+            hovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+          }`}
+        >
+          <p className="p-4 text-lg font-semibold">Card 3</p>
+        </div>
+
+        {/* Card 4 */}
+        <div
+          className={`absolute w-full h-full bg-green-100 transition-transform duration-1000 delay-900 ${
+            hovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+          }`}
+        >
+          <p className="p-4 text-lg font-semibold">Card 4</p>
+        </div>
+      </div>
+    </div>
+	);
 };
 
 export default Card;

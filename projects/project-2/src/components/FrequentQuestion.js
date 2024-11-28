@@ -88,7 +88,9 @@ const FrequentQuestion = () => {
 									/>
 								</div>
 								<div>
-									<h5 className="text-[#101828] text-[18px] font-semibold">{item?.title}</h5>
+									<h5 className="text-[#101828] text-[18px] font-semibold">
+										{item?.title}
+									</h5>
 									<p className="text-sm text-[#475467] font-normal">
 										{item?.description}
 									</p>

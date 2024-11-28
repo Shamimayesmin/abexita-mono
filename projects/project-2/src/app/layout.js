@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+// import Navbar from "@/components/Navbar";
 import Navbar from "../../../../projects/shared/components/Navbar";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         { label: "Feature-2", href: "#" },
       ],
     },
-    { label: "Pricing", href: "#" },
+    { label: "Pricing", href: "" },
     { label: "Solutions", href: "#" },
     { label: "Resources", href: "#" },
     { label: "Help", href: "#" },
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
      <body>
+      {/* <Navbar/> */}
         <Navbar menuItems={menuItems} authLinks={authLinks}/>
         <main>{children}</main>
       </body>
