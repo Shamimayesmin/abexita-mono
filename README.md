@@ -18,11 +18,11 @@ cd <repository-folder>
 Main Note: Make sure these two pages are connected via module federation. So, two projects for two designs.
 
 Prerequisite: (should be follow)
-	-Made with next.js or react.js(fulfilled)
-	-Mono-repo (fulfilled)
-	-Module-federation(fulfilled)
-	-No package.(fulfilled)
-	-Use common component(fulfilled)
+	- **Made with next.js or react.js(fulfilled)**
+	- Mono-repo (fulfilled)
+	- Module-federation(fulfilled)
+	- No package.(fulfilled)
+	- Use common component(fulfilled)
 
  ###NOTE: I was not able to create custom slider because of time issues.
 
