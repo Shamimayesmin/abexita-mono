@@ -3,11 +3,14 @@
 import Logo from "@/components/Reuseable/Logo";
 import Link from "next/link";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const Navbar = ({ menuItems, authLinks }) => {
+const Navbar = ({ menuItems = [], authLinks = [] }) => {
 	const [isOpen, setIsOpen] = useState(false);
-
+	useEffect(() => {
+		// Ensure the dropdown is closed on mount to match SSR behavior.
+		setIsOpen(false);
+	}, []);
 	return (
 		<nav className="bg-base-100 shadow fixed top-0 left-0 w-full z-50">
 			<div className="container mx-auto flex items-center justify-between px-4 py-3">
@@ -18,8 +21,9 @@ const Navbar = ({ menuItems, authLinks }) => {
 						<button
 							aria-label="Toggle menu"
 							className="btn btn-ghost"
-							onClick={() => setIsOpen(!isOpen)}
 							aria-expanded={isOpen}
+							aria-controls="navbar-menu"
+							onClick={() => setIsOpen(!isOpen)}
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

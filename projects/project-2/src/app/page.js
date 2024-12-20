@@ -1,6 +1,7 @@
 "use client";
 
 import React, { Suspense } from "react";
+import "./globals.css";
 
 import FreeTrial from "../components/FreeTrial";
 import FrequentQuestion from "../components/FrequentQuestion";
@@ -20,6 +21,7 @@ export default function Home() {
 			<Suspense fallback={<div>Loading Features...</div>}>
 				<Features />
 			</Suspense>
+
 			<FrequentQuestion />
 			<Footer />
 		</div>

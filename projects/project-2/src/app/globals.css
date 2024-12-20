@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+@import "../../../shared-config/variable.css";
+
+
 
 
 /* Navbar specific styles */

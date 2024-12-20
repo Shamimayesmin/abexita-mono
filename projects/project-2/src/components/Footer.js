@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
 	return (
 		<div className="bg-[#19525A] text-white lg:px-36 px-16">
-			<footer class="p-6 lg:p-10">
-				<div class="flex flex-col lg:flex-row lg:justify-between">
+			<footer className="p-6 lg:p-10">
+				<div className="flex flex-col lg:flex-row lg:justify-between">
 					{/* <!-- Services Section --> */}
-					<nav class="mb-6 lg:mb-0">
-						<h6 class="font-semibold text-base mb-3">For Customers</h6>
+					<nav className="mb-6 lg:mb-0">
+						<h6 className="font-semibold text-base mb-3">For Customers</h6>
 						<ul className="tex-sm leading-8">
 							<li>
 								<a href="#" className="block hover:underline">

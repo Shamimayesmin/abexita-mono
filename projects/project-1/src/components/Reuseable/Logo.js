@@ -5,7 +5,7 @@ import logo from "../../../public/assets/ambel copy 2 no pedding 1.png"
 const Logo = () => {
 	return (
 		<div>
-			<Link href="/">
+			
 				<Image
 					className="lg:w-[150px] w-20"
 					src={logo}
@@ -14,7 +14,7 @@ const Logo = () => {
 					height={35}
 					priority
 				/>
-			</Link>
+			
 		</div>
 	);
 };

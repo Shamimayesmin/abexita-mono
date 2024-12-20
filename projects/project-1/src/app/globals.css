@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "../../../shared-config/variable.css";
+
+
+
 
   
- /* global.css */
+ 
 
 /* Ensure that the navbar always has a solid background */
 nav {

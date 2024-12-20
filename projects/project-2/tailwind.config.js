@@ -1,18 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+const sharedConfig = require("../shared-config/tailwind.config");
+
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-      
-    },
-  },
-  plugins: [],
+	...sharedConfig,
+	content: [...sharedConfig.content],
 };

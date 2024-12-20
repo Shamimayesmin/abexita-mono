@@ -3,18 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "private": true,  
+  "private": true,
   "workspaces": [
-    "projects/*" ,
-    "projects/shared"  
+    "projects/*",
+    "projects/shared"
   ],
   "scripts": {
     "dev:project-1": "npm --workspace=projects/project-1 run dev",
     "dev:project-2": "npm --workspace=projects/project-2 run dev",
     "build": "npm --workspaces run build",
-    "start": "npm --workspaces run start"  
+    "start": "npm --workspaces run start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  }
 }

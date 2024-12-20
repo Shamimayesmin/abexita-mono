@@ -6,7 +6,7 @@ import Industry from "@/components/Industry";
 
 import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
-import CardScrollEffect from "@/components/Card";
+
 import Features from "@/components/Reuseable/Features";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
 			<Industry />
 			<Features />
 			<Booking />
-			{/* <CardScrollEffect/> */}
+			
 			{/* <Slider/> */}
 			<Footer />
 		</div>

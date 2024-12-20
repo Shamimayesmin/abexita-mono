@@ -73,7 +73,7 @@ const Banner = () => {
 					</button>
 				</div>
 			</div>
-			<div className="lg:w-[1280px] w-full mx-auto grid lg:grid-cols-3 grid-cols-1 absolute top-96 lg:mt-0 mt-5 inset-x-0 lg:px-0 px-2 gap-3">
+			<div className="lg:w-[1280px] w-full mx-auto grid lg:grid-cols-3 grid-cols-1 absolute lg:top-96 top-[400px] lg:mt-0 mt-5 inset-x-0 lg:px-0 px-2 gap-5">
 				{data?.map((item, index) => {
 					return (
 						<div

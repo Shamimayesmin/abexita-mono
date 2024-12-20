@@ -1,4 +1,5 @@
-import localFont from "next/font/local";
+import 'tailwindcss/tailwind.css';
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body>
-				{/* <Navbar/>  */}
+				
 				<Navbar menuItems={menuItems} authLinks={authLinks} />
 				<main>{children}</main>
 			</body>
